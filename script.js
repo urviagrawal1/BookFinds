@@ -259,7 +259,7 @@ function displayBooksByMood(mood) {
     }
   }
 
-  displayBooks(moodBooks, `Books for when you're feeling ${mood.charAt(0).toUpperCase() + mood.slice(1)}`)
+  displayBooks(moodBooks, `Books for when you're feeling ${mood}`)
 }
 
 function displayFeaturedBooks() {
