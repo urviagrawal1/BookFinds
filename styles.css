@@ -1,0 +1,116 @@
+:root {
+  --primary: #5c3d2e;
+  --secondary: #b85c38;
+  --col: #e0c097;     /*custom var name starts with--*/
+  --light: #f9f5eb;
+  --dark: #2c2c2c;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }                           /*for proper ordering and consistency*/
+
+body{
+  font-family: "Lucida Console";
+  background-color:rgba(22, 13, 11, 0.025);
+  color : var(--dark);
+}
+
+.container{
+  margin : 0 auto;     /*center*/
+  padding: 0 20px;     /*content and bordr*/
+  max-width: 1000px;
+}
+
+header {
+  background-color: var(--primary);
+  color: var(--light);
+  padding: 35px ;
+  text-align: center;
+}
+h1 {
+  font-family: "Arial";
+  font-size: 45px;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-family: "Arial";
+  font-size: 30px;
+  color: var(--primary);
+  text-align: center;
+}
+.quotes{
+  background-color: var(--col);
+  padding: 90px 0;
+}
+.quote-con{
+  text-align:center;
+  background-color:white;
+  max-width: 800px;
+  margin : 0 auto;  
+  padding: 32px;
+  border-radius: 10px;
+
+}
+.author {
+  font-style: italic;
+  margin-bottom: 25px;
+}
+.mood-sec {
+  padding: 100px 0;
+  background-color: white;
+}
+.moods {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 24px;
+}
+.mood-card {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light);
+  border-radius: 10px;
+
+}
+.mood-icon {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.search{
+  padding: 100px 0;
+  background-color: var(--light);
+}
+.search-con {
+  width: 350px;
+  margin: 0 auto 25px;
+}
+#search-in{
+  padding: 14px 16px;
+  border: 2px solid var(--primary);
+  border-radius: 5px 0 0 5px;
+  font-size: 15px;
+}
+
+.btn {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  padding:14px 25px;
+  border-radius: 0 5px 5px 0;
+  font-size: 17px;
+}
+footer {
+  background-color: var(--primary);
+  color: var(--light);
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 30px;
+}
